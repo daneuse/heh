@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilocualquiera.css">
+    <link rel="stylesheet" href="ww.css">
+    <title>Andrea García</title>
+</head>
+<body>
+    <header>
+        Aquí va a ir el banner
+    </header>
+    <nav>
+        Aqui van a ir los hipervinculos
+    </nav>
+    <section>
+        <article>
+            suhfdijuds
+        </article>
+        <article>
+            saklfihwiqd
+        </article>
+    </section>
+    <aside>
+        Aquí voy a meter imagenes
+    </aside>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="fotter-section about">
+        <h2>Contactame</h2>
+        <p>Si estas interesado en contactarme, puedes hacerlo a través de cualquiera de las siguientes 
+            redes sociales:</p>
+            <div class="contact-links">
+            <a href="http://www.facebook.com/miperfil" 
+            target="_blank"><i class="fab fa-facebook"></i>></a>
+            <a href="http://www.instagram.com/miperfil" 
+            target="_blank"><i class="fab fa-instagram"></i>></a>
+            <a href="http://www.twitter.com/miperfil" 
+            target="_blank"><i class="fab fa-twitter"></i>></a>
+            </div>
+            </div>
+           </div>
+         </div>       
+
+    <script>
+        //este siguiente codigo es para que los enlaces se abran en una nueva pestaña
+        const redessociales = document.querySelectorAll('.contact-links');
+        redessociales.forEach(link =>{
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                window.open(link.href, '_blank');
+            });
+        });
+    </script>
+
+        <div class="copyright">
+            <p>&copy;<span id="year"></span>Derechos resevados.</p>
+    </footer>
+    <script>
+        let year = document.getElementById('year');
+        let dynamicYear = new Date().getFullYear();
+        year.innerHTML=dynamicYear;
+    </script>
+</body>
+</html>
